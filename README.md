@@ -25,21 +25,21 @@ export DD_SITE=datadoghq.com
 Sandbox mode (default):
 
 ```bash
-python mock_dt_sumo_events.py
+python demoBank_mock_events.py
 ```
 
 Sandbox with options:
 
 ```bash
-python mock_dt_sumo_events.py --mode sandbox --service payments-api --env prod \
+python demoBank_mock_events.py --mode sandbox --service payments-api --env prod \
   --dt-count 5 --sumo-count 2 --splunk-count 1
 ```
 
 JL mode:
 
 ```bash
-python mock_dt_sumo_events.py --mode jl --service bfspega-dechub --env non \
-  --jl-pipeline macbank-demo2 --jl-event resource_contention \
+python demoBank_mock_events.py --mode jl --service bfspega-dechub --env non \
+  --jl-pipeline demoBank-demo2 --jl-event resource_contention \
   --jl-component cloudwatch --jl-subcomponent bfspega-dechub-dds_-_sit
 ```
 

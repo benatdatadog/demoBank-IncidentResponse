@@ -156,7 +156,7 @@ def main():
         default="sandbox",
         help="Which payload set to emit",
     )
-    parser.add_argument("--jl-pipeline", default="macbank-demo2")
+    parser.add_argument("--jl-pipeline", default="demoBank-demo2")
     parser.add_argument("--jl-event", default="resource_contention")
     parser.add_argument("--jl-component", default="cloudwatch")
     parser.add_argument("--jl-subcomponent", default="")
@@ -192,7 +192,7 @@ def main():
         ]
     else:
         base_tags = [
-            "demo:macbank-ir",
+            "demo:demoBank-ir",
             f"service:{args.service}",
             f"env:{args.env}",
             f"team:{args.team}",
@@ -354,9 +354,8 @@ def main():
         )
         time.sleep(random.uniform(args.sleep_min, args.sleep_max))
 
-    print("Done. Search in Datadog Events Explorer for: demo:macbank-ir")
+    print("Done. Search in Datadog Events Explorer for: demo:demoBank-ir")
 
 
 if __name__ == "__main__":
     main()
-
