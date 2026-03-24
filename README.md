@@ -1,4 +1,4 @@
-# MacBank Incident Response - Mock Events
+# demoBank Incident Response - Mock Events
 
 This repo contains a small Python script that sends mock Dynatrace, Sumo Logic,
 and Splunk events into Datadog. It supports two modes:
